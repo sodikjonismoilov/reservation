@@ -47,6 +47,7 @@ public class Flight {
     @Column(name = "available_seats", nullable = false)
     private Integer availableSeats;
 
+
     public Flight () {}
 
     public Flight (String flightNumber, Airport origin, Airport destination,
