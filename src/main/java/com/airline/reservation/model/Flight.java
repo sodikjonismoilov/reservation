@@ -3,6 +3,7 @@ package com.airline.reservation.model;
 
 import jakarta.persistence.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -47,12 +48,19 @@ public class Flight {
     @Column(name = "available_seats", nullable = false)
     private Integer availableSeats;
 
+    @Column(name = "price", precision = 10, scale = 2, nullable = true)
+    private BigDecimal price;
+
+    @Column(name = "currency", length = 3, nullable = true)
+    private String currency;
+
+
 
     public Flight () {}
 
     public Flight (String flightNumber, Airport origin, Airport destination,
                    LocalDateTime departureTime, LocalDateTime arrivalTime,
-                   Integer totalSeats, Integer availableSeats) {
+                   Integer totalSeats, Integer availableSeats, BigDecimal price, String currency) {
         this.flightNumber = flightNumber;
         this.origin = origin;
         this.destination = destination;
@@ -60,6 +68,8 @@ public class Flight {
         this.arrivalTime = arrivalTime;
         this.totalSeats = totalSeats;
         this.availableSeats = availableSeats;
+        this.price = price;
+        this.currency = currency;
     }
     public  Long getId() { return id;}
     public void setId(Long id) { this.id = id;}
@@ -77,5 +87,9 @@ public class Flight {
     public void setTotalSeats(Integer totalSeats) { this.totalSeats = totalSeats;}
     public Integer getAvailableSeats() { return availableSeats;}
     public void setAvailableSeats(Integer availableSeats) { this.availableSeats = availableSeats;}
+    public BigDecimal getPrice() { return price;}
+    public void setPrice(BigDecimal price) { this.price = price;}
+    public String getCurrency() { return currency;}
+    public void setCurrency(String currency) { this.currency = currency;}
 
 }

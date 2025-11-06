@@ -1,5 +1,7 @@
 package com.airline.reservation.dto;
 
+import java.math.BigDecimal;
+
 public class FlightCreateRequest {
     private String flightNumber;
     private String originCode;
@@ -7,6 +9,8 @@ public class FlightCreateRequest {
     private String departureTime;
     private String arrivalTime;
     private Integer totalSeats;
+    private BigDecimal price;
+    private String currency;
 
     public FlightCreateRequest() {}
 
@@ -23,4 +27,8 @@ public class FlightCreateRequest {
     public void setArrivalTime(String arrivalTime) { this.arrivalTime = arrivalTime; }
     public Integer getTotalSeats() { return  totalSeats; }
     public void setTotalSeats(Integer totalSeats) { this.totalSeats = totalSeats; }
+    public BigDecimal getPrice() { return  price; }
+    public void setPrice(BigDecimal price) { this.price = price; }
+    public String getCurrency() { return  currency; }
+    public void setCurrency(String currency) { this.currency = currency; }
 }

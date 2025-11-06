@@ -1,0 +1,13 @@
+-- --Postgres
+-- ALTER TABLE flights
+--     ADD COLUMN IF NOT EXISTS price NUMERIC(10,2),
+--     ADD COLUMN IF NOT EXISTS currency VARCHAR(3);
+--
+-- --backfill existing rows to avoid NOT NULL violations later
+-- UPDATE flights SET price = 0.00 WHERE price IS NULL;
+-- UPDATE flights SET currency = 'USD' WHERE currency IS NULL;
+--
+--
+-- -- now make them NOT NULL
+-- ALTER TABLE flights ALTER COLUMN currency SET NOT NULL;
+-- ALTER TABLE flights ALTER COLUMN price SET NOT NULL;

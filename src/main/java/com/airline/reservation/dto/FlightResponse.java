@@ -1,6 +1,8 @@
 package com.airline.reservation.dto;
 
 
+import java.math.BigDecimal;
+
 public class FlightResponse {
     private Long id;
     private String flightNumber;
@@ -12,6 +14,8 @@ public class FlightResponse {
     private String arrivalTime;   // ISO
     private Integer totalSeats;
     private Integer availableSeats;
+    private BigDecimal price;
+    private String currency;
 
     public FlightResponse() {}
 
@@ -19,7 +23,7 @@ public class FlightResponse {
                           String originCode, String originName,
                           String destinationCode, String destinationName,
                           String departureTime, String arrivalTime,
-                          Integer totalSeats, Integer availableSeats) {
+                          Integer totalSeats, Integer availableSeats, BigDecimal price, String currency) {
         this.id = id;
         this.flightNumber = flightNumber;
         this.originCode = originCode;
@@ -30,6 +34,8 @@ public class FlightResponse {
         this.arrivalTime = arrivalTime;
         this.totalSeats = totalSeats;
         this.availableSeats = availableSeats;
+        this.price = price;
+        this.currency = currency;
     }
 
     public Long getId() { return  id; }
@@ -52,4 +58,8 @@ public class FlightResponse {
     public void setTotalSeats(Integer totalSeats) { this.totalSeats = totalSeats; }
     public Integer getAvailableSeats() { return  availableSeats; }
     public void setAvailableSeats(Integer availableSeats) { this.availableSeats = availableSeats; }
+    public BigDecimal getPrice() { return  price; }
+    public void setPrice(BigDecimal price) { this.price = price; }
+    public String getCurrency() { return  currency; }
+    public void setCurrency(String currency) { this.currency = currency; }
 }
