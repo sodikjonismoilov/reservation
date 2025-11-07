@@ -1,0 +1,30 @@
+package com.airline.reservation.external;
+
+import com.airline.reservation.external.dto.ExternalFlightStatus;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+
+@RestController
+@RequestMapping("/external/flights")
+public class ExternalFlightController {
+
+    private final ExternalFlightService service;
+
+    public ExternalFlightController(ExternalFlightService service) {
+        this.service = service;
+    }
+
+    // GET /external/flights/status?code=BA178&date=2025-11-07
+    @GetMapping("/status")
+    public ResponseEntity<ExternalFlightStatus> status(
+            @RequestParam String code,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date
+    ) {
+        ExternalFlightStatus dto = service.getStatusByIata(code, date);
+        if (dto == null) return ResponseEntity.noContent().build();
+        return ResponseEntity.ok(dto);
+    }
+}
