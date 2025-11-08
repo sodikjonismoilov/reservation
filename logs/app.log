@@ -1,0 +1,265 @@
+2025-11-08T01:11:16.895-05:00  INFO 55779 --- [reservation] [main] c.a.reservation.ReservationApplication   : Starting ReservationApplication using Java 25 with PID 55779 (/Users/sodikjonismoilov/Documents/java_projects/reservation/target/classes started by sodikjonismoilov in /Users/sodikjonismoilov/Documents/java_projects/reservation)
+2025-11-08T01:11:16.896-05:00  INFO 55779 --- [reservation] [main] c.a.reservation.ReservationApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T01:11:17.346-05:00  INFO 55779 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-08T01:11:17.381-05:00  INFO 55779 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2025-11-08T01:11:17.689-05:00  INFO 55779 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T01:11:17.697-05:00  INFO 55779 --- [reservation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T01:11:17.698-05:00  INFO 55779 --- [reservation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T01:11:17.720-05:00  INFO 55779 --- [reservation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T01:11:17.720-05:00  INFO 55779 --- [reservation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2025-11-08T01:11:17.879-05:00  INFO 55779 --- [reservation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-08T01:11:17.913-05:00  INFO 55779 --- [reservation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-08T01:11:17.931-05:00  INFO 55779 --- [reservation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-08T01:11:18.072-05:00  INFO 55779 --- [reservation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-08T01:11:18.086-05:00  INFO 55779 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-08T01:11:18.172-05:00  INFO 55779 --- [reservation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ef4297d
+2025-11-08T01:11:18.173-05:00  INFO 55779 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-08T01:11:18.192-05:00  WARN 55779 --- [reservation] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-08T01:11:18.202-05:00  INFO 55779 --- [reservation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-08T01:11:18.652-05:00  INFO 55779 --- [reservation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-08T01:11:18.728-05:00  INFO 55779 --- [reservation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T01:11:19.071-05:00  WARN 55779 --- [reservation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-08T01:11:19.094-05:00  WARN 55779 --- [reservation] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 56a1cf3b-7894-44df-9899-f22fc9e3525d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T01:11:19.097-05:00  INFO 55779 --- [reservation] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T01:11:19.295-05:00  INFO 55779 --- [reservation] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-08T01:11:19.530-05:00  INFO 55779 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T01:11:19.543-05:00  INFO 55779 --- [reservation] [main] c.a.reservation.ReservationApplication   : Started ReservationApplication in 2.845 seconds (process running for 3.124)
+2025-11-08T01:13:51.253-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T01:13:51.254-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T01:13:51.257-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-11-08T01:13:51.313-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-09
+2025-11-08T01:15:21.373-05:00 DEBUG 55779 --- [reservation] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.booking_date,
+        b1_0.flight_id,
+        b1_0.passenger_id,
+        b1_0.seat_number,
+        b1_0.status,
+        b1_0.version 
+    from
+        bookings b1_0
+2025-11-08T01:18:32.795-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-3] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-09
+2025-11-08T01:18:50.185-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-5] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-10
+2025-11-08T01:19:03.643-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-7] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-22
+2025-11-08T03:22:51.299-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m55s133ms).
+2025-11-08T06:10:11.840-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h47m20s543ms).
+2025-11-08T08:02:05.033-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h51m53s193ms).
+2025-11-08T10:04:03.740-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h1m58s706ms).
+2025-11-08T12:13:03.251-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8m59s512ms).
+2025-11-08T12:37:10.768-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m7s516ms).
+2025-11-08T12:37:31.816-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-4] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-10
+2025-11-08T12:37:41.035-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-5] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-12
+2025-11-08T12:45:05.882-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s87ms).
+2025-11-08T12:59:03.985-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s43ms).
+2025-11-08T13:15:34.510-05:00  WARN 55779 --- [reservation] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m30s524ms).
+2025-11-08T13:23:06.885-05:00  INFO 55779 --- [reservation] [http-nio-8080-exec-8] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-22
+2025-11-08T13:24:02.361-05:00  WARN 55779 --- [reservation] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'code' for method parameter type String is not present]
+2025-11-08T13:24:03.819-05:00  WARN 55779 --- [reservation] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'code' for method parameter type String is not present]
+2025-11-08T13:26:51.201-05:00  INFO 55779 --- [reservation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T13:26:53.214-05:00  INFO 55779 --- [reservation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T13:26:53.224-05:00  INFO 55779 --- [reservation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T13:26:53.231-05:00  INFO 55779 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-08T13:26:53.232-05:00  INFO 55779 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-08T13:26:56.692-05:00  INFO 56933 --- [reservation] [main] c.a.reservation.ReservationApplication   : Starting ReservationApplication using Java 25 with PID 56933 (/Users/sodikjonismoilov/Documents/java_projects/reservation/target/classes started by sodikjonismoilov in /Users/sodikjonismoilov/Documents/java_projects/reservation)
+2025-11-08T13:26:56.692-05:00  INFO 56933 --- [reservation] [main] c.a.reservation.ReservationApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T13:26:57.149-05:00  INFO 56933 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-08T13:26:57.176-05:00  INFO 56933 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2025-11-08T13:26:57.483-05:00  INFO 56933 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T13:26:57.493-05:00  INFO 56933 --- [reservation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T13:26:57.493-05:00  INFO 56933 --- [reservation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T13:26:57.515-05:00  INFO 56933 --- [reservation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T13:26:57.516-05:00  INFO 56933 --- [reservation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 802 ms
+2025-11-08T13:26:57.676-05:00  INFO 56933 --- [reservation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-08T13:26:57.711-05:00  INFO 56933 --- [reservation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-08T13:26:57.732-05:00  INFO 56933 --- [reservation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-08T13:26:57.877-05:00  INFO 56933 --- [reservation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-08T13:26:57.893-05:00  INFO 56933 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-08T13:26:58.020-05:00  INFO 56933 --- [reservation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21698e5a
+2025-11-08T13:26:58.021-05:00  INFO 56933 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-08T13:26:58.042-05:00  WARN 56933 --- [reservation] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-08T13:26:58.052-05:00  INFO 56933 --- [reservation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-08T13:26:58.533-05:00  INFO 56933 --- [reservation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-08T13:26:58.624-05:00  INFO 56933 --- [reservation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T13:26:58.980-05:00  WARN 56933 --- [reservation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-08T13:26:59.002-05:00  WARN 56933 --- [reservation] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a979a952-71e2-4d65-90c3-48614cf1c1ba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T13:26:59.006-05:00  INFO 56933 --- [reservation] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T13:26:59.211-05:00  INFO 56933 --- [reservation] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-08T13:26:59.451-05:00  INFO 56933 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T13:26:59.461-05:00  INFO 56933 --- [reservation] [main] c.a.reservation.ReservationApplication   : Started ReservationApplication in 2.969 seconds (process running for 3.264)
+2025-11-08T13:26:59.871-05:00  INFO 56933 --- [reservation] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T13:26:59.871-05:00  INFO 56933 --- [reservation] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T13:26:59.872-05:00  INFO 56933 --- [reservation] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-08T13:28:19.273-05:00  INFO 56933 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.FlightOffersService       : Amadeus GET /v2/shopping/flight-offers?originLocationCode=JFK&destinationLocationCode=LHR&departureDate=2025-11-09&adults=1&nonStop=true&max=20&currencyCode=USD&travelClass=ECONOMY
+2025-11-08T13:32:51.376-05:00  WARN 56933 --- [reservation] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'code' for method parameter type String is not present]
+2025-11-08T13:32:53.810-05:00  INFO 56933 --- [reservation] [http-nio-8080-exec-5] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-12
+2025-11-08T13:53:23.533-05:00  INFO 56933 --- [reservation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T13:53:25.548-05:00  INFO 56933 --- [reservation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T13:53:25.561-05:00  INFO 56933 --- [reservation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T13:53:25.567-05:00  INFO 56933 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-08T13:53:25.574-05:00  INFO 56933 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-08T13:53:27.491-05:00  INFO 57543 --- [reservation] [main] c.a.reservation.ReservationApplication   : Starting ReservationApplication using Java 25 with PID 57543 (/Users/sodikjonismoilov/Documents/java_projects/reservation/target/classes started by sodikjonismoilov in /Users/sodikjonismoilov/Documents/java_projects/reservation)
+2025-11-08T13:53:27.492-05:00  INFO 57543 --- [reservation] [main] c.a.reservation.ReservationApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T13:53:27.931-05:00  INFO 57543 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-08T13:53:27.970-05:00  INFO 57543 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 4 JPA repository interfaces.
+2025-11-08T13:53:28.255-05:00  INFO 57543 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T13:53:28.264-05:00  INFO 57543 --- [reservation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T13:53:28.264-05:00  INFO 57543 --- [reservation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T13:53:28.287-05:00  INFO 57543 --- [reservation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T13:53:28.287-05:00  INFO 57543 --- [reservation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 773 ms
+2025-11-08T13:53:28.449-05:00  INFO 57543 --- [reservation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-08T13:53:28.502-05:00  INFO 57543 --- [reservation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-08T13:53:28.527-05:00  INFO 57543 --- [reservation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-08T13:53:28.677-05:00  INFO 57543 --- [reservation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-08T13:53:28.691-05:00  INFO 57543 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-08T13:53:28.784-05:00  INFO 57543 --- [reservation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63f3366a
+2025-11-08T13:53:28.785-05:00  INFO 57543 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-08T13:53:28.806-05:00  WARN 57543 --- [reservation] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-08T13:53:28.817-05:00  INFO 57543 --- [reservation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-08T13:53:29.278-05:00  INFO 57543 --- [reservation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-08T13:53:29.353-05:00  INFO 57543 --- [reservation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T13:53:29.682-05:00  WARN 57543 --- [reservation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-08T13:53:29.703-05:00  WARN 57543 --- [reservation] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4e4bf79-b945-4a14-b780-c75a3d3fb384
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T13:53:29.707-05:00  INFO 57543 --- [reservation] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T13:53:29.911-05:00  INFO 57543 --- [reservation] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-08T13:53:30.142-05:00  INFO 57543 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T13:53:30.152-05:00  INFO 57543 --- [reservation] [main] c.a.reservation.ReservationApplication   : Started ReservationApplication in 2.857 seconds (process running for 3.143)
+2025-11-08T13:53:30.293-05:00  INFO 57543 --- [reservation] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T13:53:30.293-05:00  INFO 57543 --- [reservation] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T13:53:30.294-05:00  INFO 57543 --- [reservation] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-08T13:53:45.759-05:00  INFO 57543 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=VS&flightNumber=26&scheduledDepartureDate=2025-11-09
+2025-11-08T13:53:47.181-05:00  INFO 57543 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : No data for VS26 on 2025-11-09
+2025-11-08T13:53:47.191-05:00  INFO 57543 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-09
+2025-11-08T13:53:47.423-05:00  INFO 57543 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=AA&flightNumber=100&scheduledDepartureDate=2025-11-09
+2025-11-08T14:08:40.364-05:00  INFO 57543 --- [reservation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T14:08:42.380-05:00  INFO 57543 --- [reservation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T14:08:42.399-05:00  INFO 57543 --- [reservation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T14:08:42.408-05:00  INFO 57543 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-08T14:08:42.410-05:00  INFO 57543 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-08T14:08:44.619-05:00  INFO 57911 --- [reservation] [main] c.a.reservation.ReservationApplication   : Starting ReservationApplication using Java 25 with PID 57911 (/Users/sodikjonismoilov/Documents/java_projects/reservation/target/classes started by sodikjonismoilov in /Users/sodikjonismoilov/Documents/java_projects/reservation)
+2025-11-08T14:08:44.620-05:00  INFO 57911 --- [reservation] [main] c.a.reservation.ReservationApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T14:08:45.041-05:00  INFO 57911 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-08T14:08:45.069-05:00  INFO 57911 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2025-11-08T14:08:45.338-05:00  INFO 57911 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T14:08:45.346-05:00  INFO 57911 --- [reservation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T14:08:45.346-05:00  INFO 57911 --- [reservation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T14:08:45.367-05:00  INFO 57911 --- [reservation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T14:08:45.367-05:00  INFO 57911 --- [reservation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2025-11-08T14:08:45.521-05:00  INFO 57911 --- [reservation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-08T14:08:45.562-05:00  INFO 57911 --- [reservation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-08T14:08:45.578-05:00  INFO 57911 --- [reservation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-08T14:08:45.704-05:00  INFO 57911 --- [reservation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-08T14:08:45.718-05:00  INFO 57911 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-08T14:08:45.811-05:00  INFO 57911 --- [reservation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63f3366a
+2025-11-08T14:08:45.812-05:00  INFO 57911 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-08T14:08:45.833-05:00  WARN 57911 --- [reservation] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-08T14:08:45.844-05:00  INFO 57911 --- [reservation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-08T14:08:46.301-05:00  INFO 57911 --- [reservation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-08T14:08:46.371-05:00  INFO 57911 --- [reservation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T14:08:46.702-05:00  WARN 57911 --- [reservation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-08T14:08:46.724-05:00  WARN 57911 --- [reservation] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 786ea3d5-ed82-4a46-a179-831f13cfbb40
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T14:08:46.728-05:00  INFO 57911 --- [reservation] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T14:08:46.935-05:00  INFO 57911 --- [reservation] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-08T14:08:47.178-05:00  INFO 57911 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T14:08:47.188-05:00  INFO 57911 --- [reservation] [main] c.a.reservation.ReservationApplication   : Started ReservationApplication in 2.774 seconds (process running for 3.038)
+2025-11-08T14:08:47.449-05:00  INFO 57911 --- [reservation] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T14:08:47.449-05:00  INFO 57911 --- [reservation] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T14:08:47.450-05:00  INFO 57911 --- [reservation] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-08T14:13:01.570-05:00  INFO 57911 --- [reservation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T14:13:03.582-05:00  INFO 57911 --- [reservation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T14:13:03.596-05:00  INFO 57911 --- [reservation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T14:13:03.600-05:00  INFO 57911 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-08T14:13:03.602-05:00  INFO 57911 --- [reservation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-08T14:13:05.370-05:00  INFO 58055 --- [reservation] [main] c.a.reservation.ReservationApplication   : Starting ReservationApplication using Java 25 with PID 58055 (/Users/sodikjonismoilov/Documents/java_projects/reservation/target/classes started by sodikjonismoilov in /Users/sodikjonismoilov/Documents/java_projects/reservation)
+2025-11-08T14:13:05.371-05:00  INFO 58055 --- [reservation] [main] c.a.reservation.ReservationApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T14:13:05.780-05:00  INFO 58055 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-08T14:13:05.813-05:00  INFO 58055 --- [reservation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2025-11-08T14:13:06.068-05:00  INFO 58055 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T14:13:06.075-05:00  INFO 58055 --- [reservation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T14:13:06.075-05:00  INFO 58055 --- [reservation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T14:13:06.095-05:00  INFO 58055 --- [reservation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T14:13:06.095-05:00  INFO 58055 --- [reservation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 703 ms
+2025-11-08T14:13:06.234-05:00  INFO 58055 --- [reservation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-08T14:13:06.261-05:00  INFO 58055 --- [reservation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-08T14:13:06.277-05:00  INFO 58055 --- [reservation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-08T14:13:06.407-05:00  INFO 58055 --- [reservation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-08T14:13:06.421-05:00  INFO 58055 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-08T14:13:06.509-05:00  INFO 58055 --- [reservation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31183ee2
+2025-11-08T14:13:06.510-05:00  INFO 58055 --- [reservation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-08T14:13:06.531-05:00  WARN 58055 --- [reservation] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-08T14:13:06.542-05:00  INFO 58055 --- [reservation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-08T14:13:06.999-05:00  INFO 58055 --- [reservation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-08T14:13:07.066-05:00  INFO 58055 --- [reservation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-08T14:13:07.398-05:00  WARN 58055 --- [reservation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-08T14:13:07.420-05:00  WARN 58055 --- [reservation] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7714ca90-7836-427c-a295-f9dff5c717e4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T14:13:07.424-05:00  INFO 58055 --- [reservation] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T14:13:07.629-05:00  INFO 58055 --- [reservation] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-08T14:13:07.857-05:00  INFO 58055 --- [reservation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T14:13:07.868-05:00  INFO 58055 --- [reservation] [main] c.a.reservation.ReservationApplication   : Started ReservationApplication in 2.69 seconds (process running for 2.949)
+2025-11-08T14:13:08.190-05:00  INFO 58055 --- [reservation] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T14:13:08.190-05:00  INFO 58055 --- [reservation] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T14:13:08.191-05:00  INFO 58055 --- [reservation] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-08T14:13:30.986-05:00  INFO 58055 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=BA&flightNumber=178&scheduledDepartureDate=2025-11-09
+2025-11-08T14:13:32.385-05:00  INFO 58055 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=AA&flightNumber=100&scheduledDepartureDate=2025-11-09
+2025-11-08T14:13:32.747-05:00  INFO 58055 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : Amadeus GET /v2/schedule/flights?carrierCode=VS&flightNumber=26&scheduledDepartureDate=2025-11-09
+2025-11-08T14:13:33.154-05:00  INFO 58055 --- [reservation] [http-nio-8080-exec-1] c.a.r.external.ExternalFlightService     : No data for VS26 on 2025-11-09

@@ -27,10 +27,8 @@ public class ExternalFlightController {
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date
     ) {
         if (date.isBefore(LocalDate.now(ZoneOffset.UTC))) {
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,
-                    "scheduledDepartureDate must be today or future"
-            );
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "scheduledDepartureDate must be today or future");
         }
 
         ExternalFlightStatus dto = service.getStatusByIata(code, date);
@@ -38,5 +36,11 @@ public class ExternalFlightController {
         return ResponseEntity.ok(dto);
     }
 
-
+    @GetMapping("")
+    public java.util.Map<String, String> index() {
+        return java.util.Map.of(
+                "status", "/external/flights/status?code=BA178&date=2025-11-07",
+                "search", "/external/search/offers?origin=JFK&destination=LHR&date=2025-11-08&adults=1"
+        );
+    }
 }
