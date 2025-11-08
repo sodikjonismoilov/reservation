@@ -2,10 +2,13 @@ package com.airline.reservation.external;
 
 import com.airline.reservation.external.dto.ExternalFlightStatus;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
+import java.time.ZoneOffset;
 
 @RestController
 @RequestMapping("/external/flights")
@@ -23,8 +26,17 @@ public class ExternalFlightController {
             @RequestParam String code,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date
     ) {
+        if (date.isBefore(LocalDate.now(ZoneOffset.UTC))) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    "scheduledDepartureDate must be today or future"
+            );
+        }
+
         ExternalFlightStatus dto = service.getStatusByIata(code, date);
         if (dto == null) return ResponseEntity.noContent().build();
         return ResponseEntity.ok(dto);
     }
+
+
 }

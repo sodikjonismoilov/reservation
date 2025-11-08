@@ -15,7 +15,7 @@ import java.util.List;
 @Configuration
 public class CorsConfig {
 
-    @Value("${app.cors.allowed-origins")
+    @Value("${app.cors.allowed-origins:}")
     private String allowedOrigins;
 
     @Bean
@@ -24,7 +24,8 @@ public class CorsConfig {
         config.setAllowedOrigins(List.of(allowedOrigins.split(",")));
         //TODO: set this from application.properties in prod
         config.setAllowedOrigins(List.of(
-                "http://localhost:5173/" //Vite Dev
+                "http://localhost:5173",  //Vite Dev
+                "http://localhost:3000"
         ));
         config.setAllowedMethods(List.of("GET", "POST","PATCH", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
