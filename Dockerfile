@@ -1,18 +1,27 @@
-
-# Use a lightweight Java runtime
-FROM eclipse-temurin:21-jdk-alpine
-
-# Set the working directory
+# ---------- Build stage ----------
+FROM maven:3.9.9-eclipse-temurin-21 AS build
 WORKDIR /app
 
-# Copy Maven wrapper and project files
-COPY . .
+# Copy project files
+COPY pom.xml .
+COPY .mvn .mvn
+COPY mvnw .
+RUN chmod +x mvnw
+COPY src ./src
 
-# Build the app (skip tests for faster build)
+# Build (skip tests)
 RUN ./mvnw -DskipTests package
 
-# Expose port 8080 for Render
-EXPOSE 8080
+# ---------- Run stage ----------
+FROM eclipse-temurin:21-jre
+WORKDIR /app
 
-# Run the app
-CMD ["java", "-jar", "target/reservation-0.0.1-SNAPSHOT.jar"]
+# Copy the built jar
+COPY --from=build /app/target/*-SNAPSHOT.jar /app/app.jar
+
+# Render Docker web services must listen on $PORT (Render sets it)
+EXPOSE 10000
+ENV JAVA_OPTS=""
+
+# Bind Spring Boot to the port Render provides
+CMD ["sh", "-c", "java $JAVA_OPTS -Dserver.port=$PORT -jar /app/app.jar"]
